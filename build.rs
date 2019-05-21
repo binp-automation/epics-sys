@@ -4,8 +4,6 @@ use std::path::{PathBuf};
 use bindgen::Builder;
 
 fn main() {
-    println!("cargo:rerun-if-changed=build.rs");
-    
     let epics_base = PathBuf::from(env::var("EPICS_BASE").unwrap());
     let bindings = Builder::default()
         .clang_arg(format!("-I{}", epics_base.join("include").to_str().unwrap()))
