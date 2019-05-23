@@ -3,6 +3,7 @@ name = "epics-sys"
 version = "0.1.0"
 authors = ["Alexey Gerasev <alexey.gerasev@gmail.com>"]
 edition = "2018"
+documentation = "https://binp-automation.github.io/epics-sys/target/doc/epics_sys/"
 
 [dependencies]
 
