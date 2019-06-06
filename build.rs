@@ -9,6 +9,7 @@ fn main() {
         .clang_arg(format!("-I{}", epics_base.join("include").to_str().unwrap()))
         .clang_arg(format!("-I{}", epics_base.join("include/os/Linux").to_str().unwrap()))
         .clang_arg(format!("-I{}", epics_base.join("include/compiler/clang").to_str().unwrap()))
+        .header(epics_base.join("include/link.h").to_str().unwrap())
         .header(epics_base.join("include/callback.h").to_str().unwrap())
         .header(epics_base.join("include/dbScan.h").to_str().unwrap())
         .header(epics_base.join("include/dbCommon.h").to_str().unwrap())

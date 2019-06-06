@@ -1,6 +1,6 @@
 [package]
 name = "epics-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Alexey Gerasev <alexey.gerasev@gmail.com>"]
 edition = "2018"
 documentation = "https://binp-automation.github.io/epics-sys/target/doc/epics_sys/"
@@ -8,4 +8,4 @@ documentation = "https://binp-automation.github.io/epics-sys/target/doc/epics_sy
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.49.0"
+bindgen = "0.49.2"
