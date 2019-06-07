@@ -24,6 +24,7 @@ fn main() {
         .header(epics_base.join("include/devSup.h").to_str().unwrap())
         .header(epics_base.join("include/iocsh.h").to_str().unwrap())
         .derive_default(true)
+        .derive_debug(true)
         .rustfmt_bindings(true)
         .generate()
         .expect("Unable to generate bindings");
